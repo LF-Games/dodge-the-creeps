@@ -9,6 +9,7 @@ func game_over():
 	$HUD.show_game_over()
 	$Music.stop()
 	$DeathSound.play()
+	$ColorRect.reset_color()
 
 
 func new_game():
@@ -55,3 +56,4 @@ func _on_ScoreTimer_timeout():
 func _on_StartTimer_timeout():
 	$MobTimer.start()
 	$ScoreTimer.start()
+	$ColorRect.start_tween()
