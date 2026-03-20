@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4wt6ace7hycd" path="res://main.gd" id="1_0r6n5"]
 [ext_resource type="PackedScene" uid="uid://cao351pllxqpa" path="res://mob.tscn" id="2_50pww"]
+[ext_resource type="Script" uid="uid://by1w6dcn7y873" path="res://color_rect.gd" id="3_272bh"]
 [ext_resource type="PackedScene" uid="uid://bwhlkliwp13p4" path="res://player.tscn" id="3_veqnc"]
 [ext_resource type="PackedScene" uid="uid://b0efehuavobda" path="res://hud.tscn" id="4_0qnje"]
 [ext_resource type="AudioStream" uid="uid://sgfduhhw4pno" path="res://art/House In a Forest Loop.ogg" id="5_55d8h"]
@@ -24,6 +25,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.219608, 0.372549, 0.380392, 1)
+script = ExtResource("3_272bh")
 
 [node name="Player" parent="." unique_id=927660131 instance=ExtResource("3_veqnc")]
 
