@@ -41,7 +41,12 @@ func _on_MobTimer_timeout():
 	mob.rotation = direction
 
 	# Choose the velocity for the mob.
-	var velocity = Vector2(randf_range(150.0, 250.0), 0.0)
+	var speed = randf_range(150.0, 250.0)
+	var velocity = Vector2(speed, 0.0)
+	var ratio = inverse_lerp(150.0, 250.0, speed)
+	var scale = lerp(1.25, 0.5, ratio)
+	
+	mob.update_scale(scale)
 	mob.linear_velocity = velocity.rotated(direction)
 
 	# Spawn the mob by adding it to the Main scene.
