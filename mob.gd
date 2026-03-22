@@ -8,3 +8,8 @@ func _ready():
 
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
+	
+func update_scale(value: float): 
+	$AnimatedSprite2D.scale = Vector2(value, value)
+	$CollisionShape2D.scale = Vector2(value, value)
+	$VisibleOnScreenNotifier2D.scale = Vector2(value, value)
