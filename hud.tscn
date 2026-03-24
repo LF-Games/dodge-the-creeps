@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://c1g57034r2c0" path="res://hud.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://bgv586r20ps8e" path="res://fonts/Xolonium-Regular.ttf" id="2_2jm3i"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_64ctp"]
+
 [sub_resource type="InputEventAction" id="InputEventAction_fopy7"]
 action = &"start_game"
 
@@ -20,7 +22,9 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("2_2jm3i")
 theme_override_font_sizes/font_size = 60
 text = "0"
+label_settings = SubResource("LabelSettings_64ctp")
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MessageLabel" type="Label" parent="." unique_id=1611528703]
 anchors_preset = 14
